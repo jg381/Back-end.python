@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #000;
+
+/* tela celular */
+    max-width: 420px;
+    margin: auto;
+}
+
+/* header*/
+
+.header {
+    background: #000000;
+    padding: 15px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* logo */
+
+.logo img {
+    width: 140px;
+}
+
+/* menu hamburguer */
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon span {
+    width: 30px;
+    height: 3px;
+    background: #4c5cff;
+}
+
+/* banner */
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+/* titulos */
+
+h2 {
+    color: #4c5cff;
+    text-align: center;
+}
+
+/* sections */
+
+.planos, .unidades {
+    padding: 20px;
+}
+
+/* cards */
+
+.cards {
+    display: block;
+}
+
+.card {
+    background: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    color: #4c5cff;
+}
+
+.card a {
+    display: inline-block;
+    background: #4c5cff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000;
+}
+
+footer small {
+    color: #4c5cff;
+}

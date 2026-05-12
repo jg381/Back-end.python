@@ -1,0 +1,108 @@
+/* Seletor por TAG */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Tipo de fonte */
+    margin: 0;
+    /* Define a margem */
+    background-color: #f5f5f5;
+    /* Altera a cor de fundo */
+    color: black;
+    /* Alterar a cor de fonte(letra) do site */
+    line-height: 1.5;
+    /* Espaçamento entre o texto(uma frase e outra) */
+}
+
+header {
+    background-color: #4f46e5;
+    /* Cor de fundo */
+    color: white;
+    /* Cor da fonte */
+    padding: 24px 16px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Alinhamento de texto */
+}
+
+nav {
+    display: flex;
+    /* Permite mecher os elementos de forma livre */
+    gap: 12px;
+    /* Espaçamento entre os itens */
+    justify-content: center;
+    /* Alinha os elementos na horizontal */
+    margin-top: 12px;
+    /* Trabalha margem superior */
+    /* margin-bottom: 34px; */
+    /* Margem de baixo */
+    /* margin-left: 45px; */
+    /* Margem esquerda  */
+    /* margin-right: 50px; */
+    /* Margem  direita*/
+}
+
+/* Trabalha a hierarquia a tag a esta dentro da tag nav */
+nav a {
+    text-decoration: none;
+    /* Retira as linha dos links */
+    padding: 8px 12px;
+    /* Espaçameto emcima(top) e embaixo(botom) 8px laterais de 12px */
+    border-radius: 8px;
+    /* Deixa os cantos redondas */
+    border: 1px solid #e5e7eb;
+    /* Cria a borda  #e5e7eb*/
+    color: #111827;
+    /* Cor da letra */
+    /* width: 300px; */
+    /*Largura da tela  */
+    /* height: 200px; */
+    /* Altura */
+}
+
+/* :hover altera o elemento quando passa o mouse */
+nav a:hover {
+    background-color: #4f46e5;
+    color: white;
+}
+
+/* Seletor por classe main */
+.container {
+    max-width: 900px;
+    /* Define a largura máxima */
+    margin: 0 auto;
+    padding: 0 16px;
+    margin-top: 16px;
+}
+
+/* Trabalhando com classe */
+.card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0px 2px 6px black;
+    /* Coloca sombra */
+    margin-bottom: 16px;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    /* Cria um animção ao passar o mouse */
+}
+
+/* Seleção com ID */
+#destaque {
+    border-left: 6px solid #4f46e5;
+    padding-left: 12px;
+    background-color: #eef2ff;
+}
+
+/* 
+    Diferença da classe par o ID
+        Classe - utilizada quando preciso que dois ou mais elementos seja iguais(Grupo)
+        ID - Apenas um unico elemento
+*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+}

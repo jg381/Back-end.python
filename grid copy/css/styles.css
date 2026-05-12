@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.container {
+    /* Ativa o grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: ifr ifr;
+    gap: 20px;
+}
+
+.item {
+    background-color: #5a5e5a;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 5px;
+}
+/* EXERCÍCIOS GRID COM 2 COLUNAS E DUAS LINHAS */

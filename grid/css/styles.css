@@ -1,0 +1,50 @@
+/*
+ 
+    O que é Grid?
+     É um sistema de layout bidimensional que nos permite criar grades(grids) para organizar conteúdo em linhas e colunas. É perfeito para estruturar paginas web completas
+ 
+     container: Elemeto que contem a grade
+     itens: os elemntos diretos do container
+     linhas (rows): Divizoes horizontais
+     colunas (columns): Divisoes verticais
+     celeulas: São os quadardinhos formados pelo encoontro da linha com  a coluna
+     Areas: Espaços que ocupam multiplas celulas
+*/
+ 
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+ 
+.container {
+    /* Ativa o grid */
+    display: grid;
+ 
+    /* Criando as colunas */
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-template-columns: 20vw 20vw 20vw; */
+    grid-template-columns: 1fr 1fr 1fr;
+ 
+    /* Criando as linhas */
+    grid-template-rows: ifr ifr 1fr;
+    /* grid-template-rows: 20vh 20vh 20vh; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+ 
+    /* Cria um espaço entre os itens */
+    gap: 10px;
+}
+ 
+.item{
+    background-color: #4CAF50;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 5px;
+}
+ 
+.item1{
+    background-color: #4c5baf;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 5px;
+}

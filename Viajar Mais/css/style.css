@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* O reset serve para ajudar na hora de posicionar os elemento (Imagem, texto, banner, tabelas, formularios) */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* cabeçalho */
+header {
+    background: #fff;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+/* logo */
+.logo img {
+    height: 60px;
+}
+
+/* navegação */
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+/* pesquisa */
+.search-box input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    background: #000;
+    color: #fff;
+}
+
+.search-box input::placeholder {
+    color: #ccc;
+}
+
+/*banner*/
+.banner {
+    width: 100%;
+    max-width: 1200px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 15px;
+
+    background-image: url("../banner.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* pesquisa */
+.busca {
+    padding: 30px 0;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* destino */
+.destinos {
+    padding: 20px 0;
+}
+
+.destinos .container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* cards */
+.card {
+    background: #f2f2f2;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card p {
+    color: blue;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* rodapé */
+footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid #00aaff;
+}

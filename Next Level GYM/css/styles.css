@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: #000000;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* cabeçalho */
+
+header {
+    background-color: #000000;
+    padding: 24px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+
+.logo img {
+    width: 220px;
+    height: auto;
+    display: block;
+}
+
+/* frase do header */
+
+header p {
+    color: #4c5cff;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* menu */
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4c5cff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2f3fff;
+}
+
+/* promoção/oferta */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* unidades---texto */
+
+.unidades {                 
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.unidades h2 {
+    color: #4c5cff;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+/*cards das unidades*/
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255, 254, 254, 0.778);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #4c5cff;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.card p {
+    font-size: 18px;
+    color: #444;
+}
+
+.card a {
+    display: inline-block;
+    background: #4c5cff;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.card a:hover {
+    background: #2f3fff;
+}
+
+/* finalização */
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer small {
+    color: #4c5cff;
+    font-weight: bold;
+}
