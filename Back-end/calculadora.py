@@ -23,10 +23,12 @@ def calculo(num1, operador, num2,):
             return resultado
     
 #programação
+def main():
+    print("BEM VINDO(A) A CALCULADORA PYTHON!!!")
+    valor_1 = int(input("Informe o primeiro valor: "))
+    operacao = input("Informe a operação (+) (-) (*) (/):")
+    valor_2 = int(input("Informe o segundo valor: "))
 
-print("BEM VINDO(A) A CALCULADORA PYTHON!!!")
-valor_1 = int(input("Informe o primeiro valor: "))
-operacao = input("Informe a operação (+) (-) (*) (/):")
-valor_2 = int(input("Informe o segundo valor: "))
+    print(f"O resultado é: {calculo(valor_1,operacao,valor_2)}")
 
-print(f"O resultado é: {calculo(valor_1,operacao,valor_2)}")
+main()
