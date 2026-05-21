@@ -1,5 +1,5 @@
 # "SISTEMA DE CINEMA"
-filmes = []
+filmes_cartaz = []
 precos_ingresso = []
 vendas = []
  
@@ -14,7 +14,7 @@ def cadastro_filme():
     nome_filme = input("Nome do Filme: ")
     genero_filme = input("Genero: ")
     autor_filme = input("Autor: ")
-    preco_sessao = input("Valor da sessão: ")
+    preco_sessao = int(input("Valor da sessão: "))
  
     #Dicionario (Objeto)
     filme = {
@@ -23,20 +23,22 @@ def cadastro_filme():
         'autor': autor_filme
     }
  
-    filmes.append(filme) #Cadastra o filme na lista Filmes
+    filmes_cartaz.append(nome_filme) #Cadastra o filme na lista Filmes
     precos_ingresso.append(preco_sessao) #Cadastra o valor do ingresso na lista precos_ingresso
     return mensagem("Filme cadastrado com sucesso!")
  
 #Mostrar Filme
 def mostrar_filme():
     mensagem("\n ===== FILMES =====")
-    for i in range(len(filmes)):
-        return mensagem(f" {i} - {filmes[i]} - R${precos_ingresso[i]}")
+    for i in range(len(filmes_cartaz)):
+        mensagem(f" {i} - {filmes_cartaz[i]} - R${precos_ingresso[i]}")
  
 #Função vender ingresso
-def vender_ingressos(filme):
-    vendas.append[precos_ingresso[filme]]
-    return mensagem("Ingresso vendido com sucesso!")
+def vender_ingressos():
+    mostrar_filme()
+    escolha = int(input("Escolha o numero do Filme: "))
+    vendas.append(precos_ingresso[escolha])
+    mensagem("Ingresso vendido com sucesso!")
  
 #Função calcula total de vendas
 def calcula_total():
@@ -68,10 +70,8 @@ def main():
             cadastro_filme()
         elif opcao == 2:
             mostrar_filme()
-        elif opcao == 3:
-            mostrar_filme()
-            escolha = int(input("Escolha o numero do Filme: "))
-            vender_ingressos(escolha)
+        elif opcao == 3:          
+            vender_ingressos()
         elif opcao == 4:
             mensagem(f" Arrecadação: R${calcula_total()}")
         elif opcao == 5:
