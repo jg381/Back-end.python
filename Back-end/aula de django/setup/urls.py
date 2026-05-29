@@ -17,12 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from cliente.views  import contato, home, formulario
+from cliente.views import home, formulario
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('contato/', contato),
     path('inicio/', home),
-    path('formulario/', formulario)
+    path('cadastro/', formulario)
 ]

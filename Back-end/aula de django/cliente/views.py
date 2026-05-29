@@ -1,18 +1,27 @@
-from django.shortcuts import render
-
-#importar classe (ferramenta) HttpResponse
-from django.http import HttpResponse #Vai responder a solicitação do navegador
+from django.shortcuts import render #Ja vem por padrão
 
 
-#Cria a função que responde a solicitação do navegador
-def contato(request):
-    return HttpResponse("<h1>Contato</h1>  <form>  <input type=text placeholder=email@email.com>  <input text=text placeholder=(21)99999-9999> <button>enviar</button> </form>")
- 
-
-#Chamr arquivo html (Template)
-
+#Chamar arquivos HTML (Template)
 def home(request):
-    return render (request, "clientes/home.html")
+
+
+    titulo = "Nossos melhores clientes "
+
+    nosso_cliente = {
+        'nome': "João Gabriel",
+        'idade':17,
+        'nascimento': "20/01/2009"
+    }
+
+    nomes_clientes = ["Maria", "Joao", "Mateus", "Ana", "Marcos"]
+
+    carros = [
+        {'marca': "Chevrolet", 'modelo':'Onix LT', 'ano': '2020'},
+        {'marca': "Fiat", 'modelo':'Uno', 'ano': '2010'},
+        {'marca': "VW", 'modelo':'Gol', 'ano': '2022'},
+    ]
+
+    return render(request, "clientes/home.html", {'msg':titulo, 'lista_clientes':nosso_cliente, 'dados':nomes_clientes, 'meus_carros':carros})
 
 def formulario(request):
-    return render (request, "clientes/formularios.html")
+    return render(request, "clientes/formulario.html" )
